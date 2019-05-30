@@ -1,0 +1,36 @@
+.menu-header{
+    min-height: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu-header ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.menu-header ul li{
+    list-style: none;
+    position: relative;
+}
+.menu-header ul li a{
+    color: #fff;
+    text-decoration:  none;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.menu-header ul li ul.sub-menu{
+    position: absolute;
+    background: #343a40!important;
+    display: none;
+}
+.menu-header ul li ul.sub-menu li a{
+    padding: .5rem;
+}
+.menu-header ul a:hover{
+    color: #fd7e14;
+}
+.menu-header>ul>li:hover ul.sub-menu{
+    display: block;
+}
